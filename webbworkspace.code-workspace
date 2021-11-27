@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "..\\TE20C-FORM"
+	},
+	{
+		"path": "..\\Naomi-Arley-BildGalleri"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "ProjektWebbsida"
+  }
+}
