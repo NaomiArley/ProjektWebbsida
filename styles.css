@@ -76,10 +76,35 @@ article {
 .productPage img{
   margin-top: 2%;
   width: 45vw;
-  height: 45vh;
+  height: 65vh;
 }
 
-
+select , input{
+  
+  
+  width: 15vw;
+  height: 30px;
+  margin-left: 12px;
+  margin-top: 12px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-bottom: 3px solid#dde8b9 ;
+  background-color: rgb(250, 242, 231);
+}
+input{
+  width: 3vw;
+  
+}
+.productPage button{
+  height: 5vh;
+  width: 7vw;
+}
+button:hover{
+  
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
 
 /* Sign.html */
 .signIn{
