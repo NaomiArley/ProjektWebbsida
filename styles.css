@@ -2,6 +2,7 @@
 header {
   margin-top: auto;
   padding: auto ;
+  width: auto;
   background-color: #dde8b9;
   flex-flow: row;
   display: flex;
@@ -69,20 +70,21 @@ article {
 }
 /* bild.html */
 .productPage{
-  display: flex;
+  display: flex ;
+  flex-wrap: wrap;
   padding-top: 2%;
   gap: 3%;
 }
 .productPage img{
   margin-top: 2%;
-  width: 45vw;
-  height: 65vh;
+  width: 50%;
+  height: 40%;
 }
 
 select , input{
   
   
-  width: 15vw;
+  width: 45%;
   height: 30px;
   margin-left: 12px;
   margin-top: 12px;
@@ -97,8 +99,8 @@ input{
   
 }
 .productPage button{
-  height: 5vh;
-  width: 7vw;
+  height: 5%;
+  width: 17%;
 }
 button:hover{
   
@@ -113,13 +115,13 @@ button:hover{
   align-items: center;
 }
 .login {
-  width: 35vw;
+  width: 50vw;
   height: auto;
   margin: auto;
-  text-align: left;
+  text-align: center;
   background-color: #cb8589;
-  margin: 20px;
-  padding: 30px;
+  margin: 1%;
+  padding: 1%;
 
 }
 
@@ -132,13 +134,10 @@ button:hover{
   padding: 12px 30px;
 
 }
-#name{
-  width: 230px;
 
-}
-.login input[type="text"],input[type="email"],input[type="password"]{
+.login input{
   width: 31vw;
-  height: 30px;
+  height: 4vh;
   margin-left: 12px;
   margin-top: 12px;
   border: none;
