@@ -1,6 +1,4 @@
-function showInfo(){
-    document.getElementById("info").innerHTML = "luctus quis et est. Integer pretium purus";
-  }
+
   
 let productsInCart = JSON.parse(localStorage.getItem('shoppingCart'));
 if(!productsInCart){
@@ -24,6 +22,7 @@ const countTheSumPrice = function () { // 4
 		sum += item.price;
 	});
 	return sum ;
+    
 }
 
 const updateShoppingCartHTML = function () {  // 3
@@ -31,18 +30,18 @@ const updateShoppingCartHTML = function () {  // 3
 	if (productsInCart.length > 0) {
 		let result = productsInCart.map(product => {
 			return `
-				<li class="buyItem">
+				<div class="buyItem">
 					<img src="${product.image}">
 					<div>
-						<h5>${product.name}</h5>
-						<h6>${product.price}kr</h6>
+						<h4>${product.name}</h5>
+						<h5>${product.price}kr</h6>
 						<div>
 							<button class="button-minus" data-id=${product.id}>-</button>
 							<span class="countOfProduct">${product.count}</span>
 							<button class="button-plus" data-id=${product.id}>+</button>
 						</div>
 					</div>
-				</li>`
+				</div>`
 		});
 		parentElement.innerHTML = result.join('');
 		document.querySelector('.checkout').classList.remove('hidden');
